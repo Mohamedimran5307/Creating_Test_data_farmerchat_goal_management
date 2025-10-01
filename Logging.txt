@@ -1,0 +1,338 @@
+Request method:	POST
+Request URI:	https://farmerchat.farmstack.co/mobile-app-stage/api/user/generate_otp/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+				User-Agent=Mobile-App-Test
+				Device-info=%7B%0A++%22androidId%22%3A+%226f71139c-5122-4f5e-80d2-f8868599cda3%22%2C%0A++%22deviceModel%22%3A+%22Test+Device%22%2C%0A++%22osVersion%22%3A+%22Android+11%22%2C%0A++%22appVersion%22%3A+%221.0.0%22%0A%7D
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "phone": "8080808009",
+    "phone_country_code": "+91",
+    "otp": null,
+    "device_id": "340f7b6b-d53c-4477-8484-c0f60a9e3dbe"
+}
+HTTP/1.1 201 Created
+Server: nginx/1.18.0 (Ubuntu)
+Date: Mon, 29 Sep 2025 12:10:28 GMT
+Content-Type: application/json
+Content-Length: 169
+Connection: keep-alive
+Vary: Accept, origin
+Allow: POST, OPTIONS
+X-Frame-Options: DENY
+X-Content-Type-Options: nosniff
+Referrer-Policy: same-origin
+Cross-Origin-Opener-Policy: same-origin
+
+{
+    "phone": "8080808009",
+    "phone_country_code": "+91",
+    "expiry_time": "2025-09-29T12:13:28.075260Z",
+    "delivery_channel": [
+        "sms"
+    ],
+    "user_id": "7463d772-351d-4689-b6f0-c754de9ed5aa"
+}
+Request method:	POST
+Request URI:	https://farmerchat.farmstack.co/mobile-app-stage/api/user/verify_otp/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+				User-Agent=Mobile-App-Test
+				Device-info=%7B%0A++%22androidId%22%3A+%22bb87b1df-12ff-404e-81c4-76755cc84d20%22%2C%0A++%22deviceModel%22%3A+%22Test+Device%22%2C%0A++%22osVersion%22%3A+%22Android+11%22%2C%0A++%22appVersion%22%3A+%221.0.0%22%0A%7D
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "phone": "8080808009",
+    "phone_country_code": "+91",
+    "otp": "1111"
+}
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Date: Mon, 29 Sep 2025 12:10:28 GMT
+Content-Type: application/json
+Content-Length: 1463
+Connection: keep-alive
+Vary: Accept, origin
+Allow: POST, OPTIONS
+X-Frame-Options: DENY
+X-Content-Type-Options: nosniff
+Referrer-Policy: same-origin
+Cross-Origin-Opener-Policy: same-origin
+
+{
+    "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU5MTUxNDI4LCJpYXQiOjE3NTkxNDc4MjgsImp0aSI6ImM2ZTg0ZmM4MzkwOTQxMDg5MDM5NGVjYmY2ZDg1MWI1IiwidXNlcl9pZCI6Ijc0NjNkNzcyLTM1MWQtNDY4OS1iNmYwLWM3NTRkZTllZDVhYSJ9.oeAZ7MTmEhDOaz8qI9808TBQ6E2hu4SzO_Xb-Ov_L2k",
+    "refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc1OTIzNDIyOCwiaWF0IjoxNzU5MTQ3ODI4LCJqdGkiOiIxYjExNmRiYWI4YjU0ZmQ2YTI3NzA0MjMyNjdmYWMzNiIsInVzZXJfaWQiOiI3NDYzZDc3Mi0zNTFkLTQ2ODktYjZmMC1jNzU0ZGU5ZWQ1YWEifQ.6E50u8wMozGLOgBsVhYY2NTfvamuCqnF2uqRLy7HzWM",
+    "existing_user": false,
+    "id": "7463d772-351d-4689-b6f0-c754de9ed5aa",
+    "phone": "8080808009",
+    "email": null,
+    "role": "role_selection_all_extension_worker",
+    "phone_country_code": "+91",
+    "preferred_language": {
+        "id": 1,
+        "created_on": "2024-06-20T10:50:32.728746Z",
+        "updated_on": "2024-06-20T10:50:32.728746Z",
+        "is_active": true,
+        "is_deleted": false,
+        "created_by": null,
+        "updated_by": null,
+        "name": "English (India)",
+        "display_name": "English",
+        "code": "en",
+        "latn_code": "en-Latn",
+        "asr_bcp_code": "en-US",
+        "asr_service_provider": "google",
+        "asr_inference_model": null,
+        "tts_bcp_code": "en-IN",
+        "tts_voice_name": null,
+        "tts_service_provider": "google",
+        "tts_inference_model": null,
+        "translation_service_provider": "google",
+        "translation_inference_model": null,
+        "primary_speaking_countries": [
+            "IN"
+        ],
+        "asr_enabled": true,
+        "tts_enabled": true
+    },
+    "lat": "13.165758141882232",
+    "long": "75.86650729179382",
+    "message": "Successfully logged in!"
+}
+Request method:	POST
+Request URI:	https://farmerchat.farmstack.co/mobile-app-stage/api/user/update_user_profile/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+				User-Agent=Mobile-App-Test
+				Device-info=%7B%0A++%22androidId%22%3A+%22c8ebe0e7-bcc5-4fca-94b2-20f1d085e067%22%2C%0A++%22deviceModel%22%3A+%22Test+Device%22%2C%0A++%22osVersion%22%3A+%22Android+11%22%2C%0A++%22appVersion%22%3A+%221.0.0%22%0A%7D
+				Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU5MTUxNDI4LCJpYXQiOjE3NTkxNDc4MjgsImp0aSI6ImM2ZTg0ZmM4MzkwOTQxMDg5MDM5NGVjYmY2ZDg1MWI1IiwidXNlcl9pZCI6Ijc0NjNkNzcyLTM1MWQtNDY4OS1iNmYwLWM3NTRkZTllZDVhYSJ9.oeAZ7MTmEhDOaz8qI9808TBQ6E2hu4SzO_Xb-Ov_L2k
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Jeevan",
+    "age": null,
+    "gender": null,
+    "role": "role_selection_all_extension_worker",
+    "land_holding": null,
+    "live_stock_details": null,
+    "user_id": "7463d772-351d-4689-b6f0-c754de9ed5aa",
+    "specialization": null,
+    "farmer_reach_count": null,
+    "profile_picture": "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png",
+    "fcm_token": null,
+    "receive_com_via_whatsapp": false,
+    "upi_id": "example.xbl"
+}
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Date: Mon, 29 Sep 2025 12:10:29 GMT
+Content-Type: application/json
+Content-Length: 1676
+Connection: keep-alive
+Vary: Accept, origin
+Allow: POST, OPTIONS
+X-Frame-Options: DENY
+X-Content-Type-Options: nosniff
+Referrer-Policy: same-origin
+Cross-Origin-Opener-Policy: same-origin
+
+{
+    "message": "User profile updated successfully",
+    "user_profile": {
+        "id": "318127e4-c8c3-4f9b-9e7a-eebc65e89465",
+        "user_id": "7463d772-351d-4689-b6f0-c754de9ed5aa",
+        "first_name": "Jeevan",
+        "last_name": null,
+        "age": null,
+        "gender": null,
+        "role": "role_selection_all_extension_worker",
+        "land_holding": null,
+        "country": 1,
+        "geography_level2": 5,
+        "geography_level3": "Hassan",
+        "geography_level4": "Beluru taluk",
+        "geography_level5": "Belur",
+        "geography_level6": "Belur - Somvarpet Road",
+        "live_stock_details": null,
+        "address": {
+            "lat": "13.1655808",
+            "lon": "75.8662751",
+            "name": "Beluru Bus Stand",
+            "type": "bus_station",
+            "class": "amenity",
+            "osm_id": 370726657,
+            "address": {
+                "road": "NH73",
+                "state": "Karnataka",
+                "county": "Beluru taluk",
+                "hamlet": "Tolalu",
+                "amenity": "Beluru Bus Stand",
+                "country": "India",
+                "village": "Bellotte",
+                "country_code": "in",
+                "ISO3166-2-lvl4": "IN-KA",
+                "state_district": "Hassan"
+            },
+            "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+            "osm_type": "way",
+            "place_id": 232238944,
+            "importance": 3.750133516437045e-05,
+            "place_rank": 30,
+            "addresstype": "amenity",
+            "boundingbox": [
+                "13.1651342",
+                "13.1661580",
+                "75.8659987",
+                "75.8667229"
+            ],
+            "display_name": "Beluru Bus Stand, NH73, Tolalu, Bellotte, Beluru taluk, Hassan, Karnataka, India"
+        },
+        "crop_details": null,
+        "lat": "13.165758141882232",
+        "long": "75.86650729179382",
+        "farmer_reach_count": null,
+        "specialization": null,
+        "profile_picture": "https://farmerchat-mobile-app-stage.s3.ap-southeast-2.amazonaws.com/FARMER_CHAT/profile_pictures/7463d772-351d-4689-b6f0-c754de9ed5aa_image_input.jpg",
+        "fcm_token": null,
+        "receive_com_via_whatsapp": false,
+        "llm_model": "gpt-4o-mini"
+    }
+}
+Request method:	POST
+Request URI:	https://farmerchat.farmstack.co/mobile-app-stage/api/user/update_user_location/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+				User-Agent=Mobile-App-Test
+				Device-info=%7B%0A++%22androidId%22%3A+%22fde0a139-fba2-4503-b8c4-0c93c32c57d9%22%2C%0A++%22deviceModel%22%3A+%22Test+Device%22%2C%0A++%22osVersion%22%3A+%22Android+11%22%2C%0A++%22appVersion%22%3A+%221.0.0%22%0A%7D
+				Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU5MTUxNDI4LCJpYXQiOjE3NTkxNDc4MjgsImp0aSI6ImM2ZTg0ZmM4MzkwOTQxMDg5MDM5NGVjYmY2ZDg1MWI1IiwidXNlcl9pZCI6Ijc0NjNkNzcyLTM1MWQtNDY4OS1iNmYwLWM3NTRkZTllZDVhYSJ9.oeAZ7MTmEhDOaz8qI9808TBQ6E2hu4SzO_Xb-Ov_L2k
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "lat": "13.165758141882232",
+    "user_id": "7463d772-351d-4689-b6f0-c754de9ed5aa",
+    "long": "75.86650729179382"
+}
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Date: Mon, 29 Sep 2025 12:10:31 GMT
+Content-Type: application/json
+Content-Length: 1268
+Connection: keep-alive
+Vary: Accept, origin
+Allow: POST, OPTIONS
+X-Frame-Options: DENY
+X-Content-Type-Options: nosniff
+Referrer-Policy: same-origin
+Cross-Origin-Opener-Policy: same-origin
+
+{
+    "user_profile": {
+        "id": "318127e4-c8c3-4f9b-9e7a-eebc65e89465",
+        "lat": "13.165758141882232",
+        "long": "75.86650729179382",
+        "country": 1,
+        "country_name": "India",
+        "country_code": "IN",
+        "geography_level2": 5,
+        "geography_level2_name": "Karnataka",
+        "geography_level3": "Hassan",
+        "geography_level4": "Beluru taluk",
+        "geography_level5": "Belur",
+        "geography_level6": "Belur - Somvarpet Road",
+        "geography_display_address": "Belur, Beluru taluk",
+        "user_id": "7463d772-351d-4689-b6f0-c754de9ed5aa",
+        "address": {
+            "place_id": 232238944,
+            "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+            "osm_type": "way",
+            "osm_id": 370726657,
+            "lat": "13.1655808",
+            "lon": "75.8662751",
+            "class": "amenity",
+            "type": "bus_station",
+            "place_rank": 30,
+            "importance": 3.750133516437045e-05,
+            "addresstype": "amenity",
+            "name": "Beluru Bus Stand",
+            "display_name": "Beluru Bus Stand, NH73, Tolalu, Bellotte, Beluru taluk, Hassan, Karnataka, India",
+            "address": {
+                "amenity": "Beluru Bus Stand",
+                "road": "NH73",
+                "hamlet": "Tolalu",
+                "village": "Bellotte",
+                "county": "Beluru taluk",
+                "state_district": "Hassan",
+                "state": "Karnataka",
+                "ISO3166-2-lvl4": "IN-KA",
+                "country": "India",
+                "country_code": "in"
+            },
+            "boundingbox": [
+                "13.1651342",
+                "13.1661580",
+                "75.8659987",
+                "75.8667229"
+            ]
+        }
+    }
+}
+Request method:	POST
+Request URI:	https://farmerchat.farmstack.co/mobile-app-stage/api/user/verify_referral_code/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+				User-Agent=Mobile-App-Test
+				Device-info=%7B%0A++%22androidId%22%3A+%22a93b6976-7ab3-4def-9fb1-38df7cf0f915%22%2C%0A++%22deviceModel%22%3A+%22Test+Device%22%2C%0A++%22osVersion%22%3A+%22Android+11%22%2C%0A++%22appVersion%22%3A+%221.0.0%22%0A%7D
+				Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU5MTUxNDI4LCJpYXQiOjE3NTkxNDc4MjgsImp0aSI6ImM2ZTg0ZmM4MzkwOTQxMDg5MDM5NGVjYmY2ZDg1MWI1IiwidXNlcl9pZCI6Ijc0NjNkNzcyLTM1MWQtNDY4OS1iNmYwLWM3NTRkZTllZDVhYSJ9.oeAZ7MTmEhDOaz8qI9808TBQ6E2hu4SzO_Xb-Ov_L2k
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "user_id": "7463d772-351d-4689-b6f0-c754de9ed5aa",
+    "code": "9090909011"
+}
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Date: Mon, 29 Sep 2025 12:10:33 GMT
+Content-Type: application/json
+Content-Length: 58
+Connection: keep-alive
+Vary: Accept, origin
+Allow: POST, OPTIONS
+X-Frame-Options: DENY
+X-Content-Type-Options: nosniff
+Referrer-Policy: same-origin
+Cross-Origin-Opener-Policy: same-origin
+
+{
+    "message": "You are mapped to your referrer successfully"
+}
