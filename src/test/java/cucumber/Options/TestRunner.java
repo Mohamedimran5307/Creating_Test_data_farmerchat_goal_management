@@ -13,8 +13,8 @@ import io.cucumber.junit.CucumberOptions;
         "pretty"
     },
     monochrome = true,
-    publish = true
-    // tags = "@Update_User_Profile"
+    publish = true,
+    tags = "@Ask_Text_query"
 )
 public class TestRunner {
 }
